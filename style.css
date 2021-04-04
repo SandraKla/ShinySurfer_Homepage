@@ -1,0 +1,39 @@
+p{
+  font-size: 18px;
+}
+
+header {
+  border-bottom: 3px solid #466995;
+  position: fixed;
+  width: 98%;
+  background-color: #6495ed;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2{
+  color: #103b89;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3{
+  color: #103b89;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  background: #e8effc;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.navigation {
+  position: fixed;
+  margin-left: 20px;
+  margin-right: 20px;
+}
