@@ -4,8 +4,18 @@ p{
 
 header {
   border-bottom: 3px solid #466995;
+  border-top: 3px solid #466995;
   position: fixed;
   width: 98%;
+  background-color: #6495ed;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer {
+  border-bottom: 3px solid #466995;
+  border-top: 3px solid #466995;
   background-color: #6495ed;
   text-align: center;
   margin-left: 0;
@@ -36,4 +46,12 @@ body {
   position: fixed;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+#forkme_banner {
+    color: #fff;
+}
+
+figure {
+  text-align: center;
 }

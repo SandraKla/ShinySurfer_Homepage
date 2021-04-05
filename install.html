@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Shiny Surfer</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<header>
+  <h3></br><strong>ShinySurfer</strong> - Software Tool for the Analysis and Visualization of MRI images of the brain </h3>
+</header>
+
+<body>
+
+<p class = "navigation">
+  <a href="./index.html">Home</a>
+  <a href="./install.html">Installation</a>
+  <a href="./guide.html">Guide</a>
+  <a href="./usage.html">Usage</a>
+  <a href="./about.html">About</a></p>
+	
+</br></br></br></br></br>
+  
+<h2>Installation</h2>
+<p><strong>Prerequisite:</strong> R and shiny must be installed!</p>
+<p><strong>1. Option: </strong>Download the Zip-File from this Shiny App and set your working direction to this path and run:</p>
+
+<pre>
+  <code>
+  # Test if shiny is installed:
+  if("shiny" %in% rownames(installed.packages())){
+  library(shiny)} else{
+  install.packages("shiny")}
+  </code>
+  <code>
+  library(shiny)
+  runApp("app.R")
+  </code>
+</pre>
+
+<p><strong>2. Option: </strong>Use the function runGitHub() from the package shiny:</p>
+
+<pre>
+  <code>
+  library(shiny)
+  runGitHub("MRI_Analysis", "SandraKla")
+  </code>
+</pre>
+
+<p>Remaining <a href="./about.html">packages</a> will download when launching the app. </p>
+ 
+</body>
+<footer>
+   <p><a id="forkme_banner" href="https://github.com/SandraKla/ShinySurfer">View on GitHub</a></p>
+</footer>
+</html>

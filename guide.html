@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Shiny Surfer</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<header>
+  <h3></br><strong>ShinySurfer</strong> - Software Tool for the Analysis and Visualization of MRI images of the brain </h3>
+</header>
+
+<body>
+
+<p class = "navigation">
+  <a href="./index.html">Home</a>
+  <a href="./install.html">Installation</a>
+  <a href="./guide.html">Guide</a>
+  <a href="./usage.html">Usage</a>
+  <a href="./about.html">About</a></p>
+	
+</br></br></br></br></br>
+
+<h2> Load the data </h2>
+<h3> Old format </h3>
+
+<p>The file must be in .xls or .xlsx format. And the check-button "Old data format" must be activate!</p>
+<figure>
+  <img src="figures/step2.png" align="center" width="400"/>
+</figure>
+<p>The data order of the columns is ID, sex, age. The remaining columns are 74 regions of the left hemisphere 
+and 74 regions of the right hemisphere. All column names must exist, but related data can be null. In this OASIS data set, there are 300 data sets in total. </p> 
+<img src="figures/oasis.png" align="center" width="100%"/>
+
+<h3> New format </h3>
+
+<p>The txt files obtained after analysis in Freesurfer can be immediately used further in the Shiny app. The check-button "Old data format" should not be activated this time!
+The picture shows an example of the reloading process of the files. The file demograhics.csv has additional information about the patients (like gender and age).</p>
+<figure>
+  <img src="figures/step1.png" align="center" width="400"/>
+</figure>
+
+<p>You can filter the columns and information as you wish. To restart the Shiny App use the Restart-Button.</p>
+
+<h3> Names Correction (only old format) </h3>
+
+<p>Different users have different names for the same brain region, so in this Shiny App you can import a file for this. The file must be also in .xls or .xlsx format. You can customize the brain region name to the name you want with the template areas.xlsx. In this file, the left column is the original name of the region 
+(do not change) and in the right column is the user-defined name. Use for this the Names correction FileInput. </p>
+
+</body>
+<footer>
+   <p><a id="forkme_banner" href="https://github.com/SandraKla/ShinySurfer">View on GitHub</a></p>
+</footer>
+</html>
